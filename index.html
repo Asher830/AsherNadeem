@@ -1,0 +1,447 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to HTML</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f5f7;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #123c50, #168aad);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: #123c50;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #52e0d0;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 22px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+        }
+
+        h2 {
+            color: #168aad;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #123c50;
+            margin: 12px 0;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        pre {
+            background: #123c50;
+            color: #d5f5f5;
+            padding: 18px;
+            border-radius: 7px;
+            overflow-x: auto;
+            margin-top: 12px;
+        }
+
+        code {
+            background: #e2f2f5;
+            color: #087e8b;
+            padding: 3px 5px;
+            border-radius: 4px;
+        }
+
+        pre code {
+            background: none;
+            color: #d5f5f5;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .card {
+            background: #eaf5f7;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #168aad;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .highlight {
+            background: #e2f5f3;
+            border-left: 4px solid #168a8a;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #168aad;
+            color: white;
+            padding: 12px 22px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background: #123c50;
+        }
+
+        footer {
+            background: #123c50;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 35px;
+        }
+
+        @media(max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Introduction to HTML</h1>
+        <p>Learn the Basics of Web Development</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About HTML</a>
+        <a href="#history">History</a>
+        <a href="#tags">HTML Tags</a>
+        <a href="#structure">Structure</a>
+        <a href="#advantages">Advantages</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- Home -->
+        <div class="intro" id="home">
+            <h2>Welcome to HTML Learning</h2>
+            <p>
+                HTML is the first step toward becoming a web developer.
+                Learn how websites are created and how information
+                is displayed on the internet.
+            </p>
+        </div>
+
+        <!-- About HTML -->
+        <section id="about">
+            <h2>1. What is HTML?</h2>
+
+            <p>
+                HTML stands for HyperText Markup Language.
+                It is the standard language used to create web pages.
+                HTML provides the basic structure of a website and
+                organizes its content.
+            </p>
+
+            <p>
+                With HTML, we can add headings, paragraphs,
+                images, links, lists and tables to a webpage.
+            </p>
+
+            <div class="highlight">
+                <strong>Note:</strong> HTML is a markup language,
+                not a programming language.
+            </div>
+        </section>
+
+        <!-- History -->
+        <section id="history">
+            <h2>2. History of HTML</h2>
+
+            <p>
+                HTML was created by Tim Berners-Lee in 1991.
+                It was developed to help people share information
+                through the World Wide Web.
+            </p>
+
+            <p>
+                Over the years, HTML has improved with new features.
+                HTML5 introduced better support for images, audio,
+                video and modern website structures.
+            </p>
+        </section>
+
+        <!-- Importance -->
+        <section>
+            <h2>3. Importance of HTML</h2>
+
+            <p>HTML is important in web development because:</p>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Website Structure</h3>
+                    <p>It organizes the content of web pages.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Easy to Learn</h3>
+                    <p>Its simple tags make it beginner-friendly.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Browser Support</h3>
+                    <p>It works in all major web browsers.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- HTML Structure -->
+        <section id="structure">
+            <h2>4. Basic Structure of HTML</h2>
+
+            <p>
+                Every HTML document follows a basic structure.
+                Here is a simple example:
+            </p>
+
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Website&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;Welcome to HTML.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            <h3>Explanation:</h3>
+
+            <ul>
+                <li><code>&lt;html&gt;</code> Defines the HTML document.</li>
+                <li><code>&lt;head&gt;</code> Contains page information.</li>
+                <li><code>&lt;title&gt;</code> Sets the page title.</li>
+                <li><code>&lt;body&gt;</code> Contains visible content.</li>
+            </ul>
+        </section>
+
+        <!-- HTML Tags -->
+        <section id="tags">
+            <h2>5. Common HTML Tags</h2>
+
+            <p>
+                HTML uses different tags to display different
+                types of content.
+            </p>
+
+            <ul>
+                <li><code>&lt;h1&gt;</code> - Main heading.</li>
+                <li><code>&lt;p&gt;</code> - Paragraph.</li>
+                <li><code>&lt;br&gt;</code> - Line break.</li>
+                <li><code>&lt;a&gt;</code> - Creates a link.</li>
+                <li><code>&lt;img&gt;</code> - Displays an image.</li>
+                <li><code>&lt;ul&gt;</code> - Creates a bullet list.</li>
+                <li><code>&lt;table&gt;</code> - Creates a table.</li>
+                <li><code>&lt;div&gt;</code> - Creates a content container.</li>
+            </ul>
+        </section>
+
+        <!-- HTML Elements -->
+        <section>
+            <h2>6. HTML Elements and Attributes</h2>
+
+            <p>
+                An HTML element usually consists of an opening tag,
+                content and a closing tag.
+            </p>
+
+            <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+
+            <p>
+                Attributes provide extra information about HTML elements.
+            </p>
+
+            <pre><code>&lt;a href="https://www.google.com"&gt;
+    Visit Google
+&lt;/a&gt;</code></pre>
+
+            <p>
+                Here, <code>href</code> is an attribute that specifies
+                the destination of the link.
+            </p>
+        </section>
+
+        <!-- Lists and Tables -->
+        <section>
+            <h2>7. HTML Lists and Tables</h2>
+
+            <h3>HTML Lists</h3>
+
+            <p>Lists are used to organize information.</p>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <h3>HTML Tables</h3>
+
+            <p>Tables organize information into rows and columns.</p>
+
+            <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Ali&lt;/td&gt;
+        &lt;td&gt;20&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+        </section>
+
+        <!-- HTML and CSS -->
+        <section>
+            <h2>8. Difference Between HTML and CSS</h2>
+
+            <p>
+                HTML and CSS are both important technologies
+                used to create websites.
+            </p>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>HTML</h3>
+                    <p>
+                        HTML creates the structure of a webpage,
+                        such as headings, paragraphs and images.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>CSS</h3>
+                    <p>
+                        CSS controls the appearance of a webpage,
+                        including colors, fonts and layouts.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advantages -->
+        <section id="advantages">
+            <h2>9. Advantages of HTML</h2>
+
+            <ul>
+                <li>Easy to learn and understand.</li>
+                <li>Free to use.</li>
+                <li>Supported by all major browsers.</li>
+                <li>Helps create the structure of websites.</li>
+                <li>Can be used with CSS and JavaScript.</li>
+                <li>Supports images, audio and video.</li>
+            </ul>
+        </section>
+
+        <!-- Conclusion -->
+        <section>
+            <h2>10. Conclusion</h2>
+
+            <p>
+                HTML is the foundation of web development.
+                It helps us create and organize website content.
+                Learning HTML is an important first step for anyone
+                interested in creating websites.
+            </p>
+
+            <div class="highlight">
+                <strong>Remember:</strong>
+                HTML creates the structure, while CSS makes
+                the website attractive.
+            </div>
+
+            <button onclick="alert('Thank you for learning HTML!')">
+                Finish Learning
+            </button>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <h3 style="color:white;">HTML Learning Website</h3>
+        <p>Learn the Basics of Web Development</p>
+        <p>© 2026 HTML Learning Project</p>
+    </footer>
+
+</body>
+</html>
